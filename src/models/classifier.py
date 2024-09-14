@@ -35,7 +35,6 @@ class SklearnClassifier(Classifier):
         self.clf.fit(df_train[self.features].values, df_train[self.target].values)
 
     def evaluate(self, df_test: pd.DataFrame):
-        # try:
         y_test = df_test[self.target].values
         y_pred_prob = self.clf.predict_proba(df_test[self.features].values)[:, 1]
         fpr, tpr, thresholds = roc_curve(y_test, y_pred_prob)
@@ -58,5 +57,4 @@ class SklearnClassifier(Classifier):
 
     def predict(self, df: pd.DataFrame):
         return (self.clf.predict_proba(df[self.features].values)[:, 1] >= self.optimal_threshold).astype(int)
-        # return self.clf.predict_proba(df[self.features].values)[:, 1] 
-    
+
