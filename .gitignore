@@ -1,0 +1,16 @@
+# byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# swap files
+*.sw[op]
+
+# pyenv versions
+.python-version
+
+# pipeline artifacts
+data/processed/*.csv
+models/*.pkl
+
+# jupyter
+.ipynb_checkpoints/
