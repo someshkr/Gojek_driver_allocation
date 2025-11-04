@@ -39,7 +39,7 @@ The traditional SDLC process can be decomposed into several sequential phases. F
 
 The existing process follows a sequential, or waterfall, model where each phase must be completed entirely before the next begins. The following diagram illustrates this flow and highlights key bottlenecks.
 
-![alt text](workflow.jpeg "Workflow")
+![alt text]([workflow.jpeg](https://github.com/someshkr/Gojek_driver_allocation/blob/main/workflow.jpeg) "Workflow")
 
 *Note:* The diagram identifies the Application Development and Client UAT phases as primary bottlenecks due to their extended durations and critical impact on workflow.
 
